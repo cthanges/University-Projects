@@ -1,2 +1,6 @@
 # Complete-CPU
-For my computer organization and architecture course, I had to design and develop a complete CPU system using VHDL, while integrating a data path, a control unit, and a reset circuit. The purpose of this CPU is to implement the features described in the CPU Specification document. The operation of the CPU was simulated using the Altera Quartus II software (Version 14.0).
+The purpose of this project is to implement a complete CPU by using various components designed and developed throughout previous labs, following the [CPU Specification Document](https://github.com/cthanges/University-Projects/blob/main/Complete-CPU/CPU_Specification.pdf)
+
+For further information, please refer to the final report: [Final Report](https://github.com/cthanges/University-Projects/blob/main/Complete-CPU/Final%20Report.pdf)
+
+This project was developed as part of COE608: Computer Organization and Architecture at Toronto Metropolitan University.
