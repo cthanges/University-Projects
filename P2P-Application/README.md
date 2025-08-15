@@ -30,3 +30,6 @@ If the peer sends an S-type PDU, it must search for the content requested by the
 Once the peer sends an O-type PDU, the server must be able to display all the content that was registered by the peer as a list. If no content was ever registered by the peer, the server instead sends an E-type PDU back to the peer.
 
 Regardless if the peer types in ‘T’ or ‘Q” in the command prompt, the server should receive a T-type PDU, where it is responsible for deregistering all of the peer’s content. But the difference is for ‘T’, an A-type or E-type PDU will be sent to indicate whether the registration was successful or not, whereas for Q, the server does not send back any PDU since the peer is going to be exiting out of the application.
+
+##
+This project was developed as part of COE768: Computer Networks at Toronto Metropolitan University.
