@@ -1,0 +1,490 @@
+Release 13.4 - xst O.87xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Reading design: PONG.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "PONG.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "PONG"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : PONG
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/student2/s4jabbar/COE758/Project2/VGAdisplay.vhd" in Library work.
+Entity <PONG> compiled.
+Entity <PONG> (Architecture <Behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <PONG> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <PONG> in library <work> (Architecture <Behavioral>).
+Entity <PONG> analyzed. Unit <PONG> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <PONG>.
+    Related source file is "/home/student2/s4jabbar/COE758/Project2/VGAdisplay.vhd".
+WARNING:Xst:647 - Input <BTND> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <BTNL> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <BTNR> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <BTNU> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SW0> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SW1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SW2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SW3> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <score_x> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <score> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <playermovespeed> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <paddlewidth> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <p2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <p1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <delay> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <buttoncounter> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <ballmovespeed> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <ball_ymove> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <ball_y> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <ball_xmove> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <ball_x> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Register <Rout> equivalent to <Bout> has been removed
+    Found 1-bit register for signal <H>.
+    Found 1-bit register for signal <V>.
+    Found 8-bit register for signal <Gout>.
+    Found 8-bit register for signal <Bout>.
+    Found 10-bit subtractor for signal <$sub0000> created at line 107.
+    Found 10-bit comparator greatequal for signal <Bout$cmp_ge0000> created at line 99.
+    Found 9-bit comparator greatequal for signal <Bout$cmp_ge0001> created at line 99.
+    Found 9-bit comparator greatequal for signal <Bout$cmp_ge0002> created at line 99.
+    Found 10-bit comparator greatequal for signal <Bout$cmp_ge0003> created at line 102.
+    Found 9-bit comparator greatequal for signal <Bout$cmp_ge0004> created at line 102.
+    Found 9-bit comparator greatequal for signal <Bout$cmp_ge0005> created at line 102.
+    Found 9-bit comparator greatequal for signal <Bout$cmp_ge0006> created at line 107.
+    Found 10-bit comparator greater for signal <Bout$cmp_gt0000> created at line 107.
+    Found 6-bit comparator greater for signal <Bout$cmp_gt0001> created at line 107.
+    Found 10-bit comparator lessequal for signal <Bout$cmp_le0000> created at line 99.
+    Found 9-bit comparator lessequal for signal <Bout$cmp_le0001> created at line 99.
+    Found 9-bit comparator lessequal for signal <Bout$cmp_le0002> created at line 99.
+    Found 10-bit comparator lessequal for signal <Bout$cmp_le0003> created at line 102.
+    Found 9-bit comparator lessequal for signal <Bout$cmp_le0004> created at line 102.
+    Found 9-bit comparator lessequal for signal <Bout$cmp_le0005> created at line 102.
+    Found 10-bit comparator less for signal <Bout$cmp_lt0000> created at line 107.
+    Found 9-bit comparator less for signal <Bout$cmp_lt0001> created at line 107.
+    Found 1-bit register for signal <dclk>.
+    Found 10-bit comparator greater for signal <Gout$cmp_gt0000> created at line 112.
+    Found 9-bit comparator greater for signal <Gout$cmp_gt0001> created at line 112.
+    Found 10-bit comparator less for signal <Gout$cmp_lt0000> created at line 112.
+    Found 9-bit comparator less for signal <Gout$cmp_lt0001> created at line 112.
+    Found 32-bit comparator greatequal for signal <H$cmp_ge0000> created at line 77.
+    Found 32-bit comparator lessequal for signal <H$cmp_le0000> created at line 77.
+    Found 10-bit register for signal <h_pos>.
+    Found 32-bit up counter for signal <hsync>.
+    Found 32-bit comparator greatequal for signal <V$cmp_ge0000> created at line 83.
+    Found 32-bit comparator lessequal for signal <V$cmp_le0000> created at line 83.
+    Found 9-bit register for signal <v_pos>.
+    Found 32-bit up counter for signal <vsync>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred  38 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  25 Comparator(s).
+Unit <PONG> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 10-bit subtractor                                     : 1
+# Counters                                             : 2
+ 32-bit up counter                                     : 2
+# Registers                                            : 7
+ 1-bit register                                        : 3
+ 10-bit register                                       : 1
+ 8-bit register                                        : 2
+ 9-bit register                                        : 1
+# Comparators                                          : 25
+ 10-bit comparator greatequal                          : 2
+ 10-bit comparator greater                             : 2
+ 10-bit comparator less                                : 2
+ 10-bit comparator lessequal                           : 2
+ 32-bit comparator greatequal                          : 2
+ 32-bit comparator lessequal                           : 2
+ 6-bit comparator greater                              : 1
+ 9-bit comparator greatequal                           : 5
+ 9-bit comparator greater                              : 1
+ 9-bit comparator less                                 : 2
+ 9-bit comparator lessequal                            : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <Bout_6> (without init value) has a constant value of 0 in block <PONG>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 6-bit subtractor                                      : 1
+# Counters                                             : 2
+ 32-bit up counter                                     : 2
+# Registers                                            : 38
+ Flip-Flops                                            : 38
+# Comparators                                          : 25
+ 10-bit comparator greatequal                          : 2
+ 10-bit comparator greater                             : 2
+ 10-bit comparator less                                : 2
+ 10-bit comparator lessequal                           : 2
+ 32-bit comparator greatequal                          : 2
+ 32-bit comparator lessequal                           : 2
+ 6-bit comparator greater                              : 1
+ 9-bit comparator greatequal                           : 5
+ 9-bit comparator greater                              : 1
+ 9-bit comparator less                                 : 2
+ 9-bit comparator lessequal                            : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <Bout_6> (without init value) has a constant value of 0 in block <PONG>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <Bout_0> in Unit <PONG> is equivalent to the following 7 FFs/Latches, which will be removed : <Bout_2> <Bout_3> <Bout_5> <Bout_7> <Gout_3> <Gout_5> <Gout_7> 
+INFO:Xst:2261 - The FF/Latch <Bout_1> in Unit <PONG> is equivalent to the following FF/Latch, which will be removed : <Bout_4> 
+INFO:Xst:2261 - The FF/Latch <Gout_1> in Unit <PONG> is equivalent to the following FF/Latch, which will be removed : <Gout_4> 
+INFO:Xst:2261 - The FF/Latch <Gout_0> in Unit <PONG> is equivalent to the following FF/Latch, which will be removed : <Gout_2> 
+
+Optimizing unit <PONG> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block PONG, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 91
+ Flip-Flops                                            : 91
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : PONG.ngr
+Top Level Output File Name         : PONG
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 36
+
+Cell Usage :
+# BELS                             : 375
+#      GND                         : 1
+#      INV                         : 15
+#      LUT1                        : 69
+#      LUT2                        : 9
+#      LUT2_L                      : 2
+#      LUT3                        : 14
+#      LUT3_L                      : 2
+#      LUT4                        : 64
+#      LUT4_L                      : 7
+#      MUXCY                       : 124
+#      MUXF5                       : 3
+#      VCC                         : 1
+#      XORCY                       : 64
+# FlipFlops/Latches                : 91
+#      FD                          : 20
+#      FDR                         : 37
+#      FDRE                        : 32
+#      FDRS                        : 1
+#      FDS                         : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 27
+#      OBUF                        : 27
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                       96  out of   4656     2%  
+ Number of Slice Flip Flops:             91  out of   9312     0%  
+ Number of 4 input LUTs:                182  out of   9312     1%  
+ Number of IOs:                          36
+ Number of bonded IOBs:                  28  out of    232    12%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 1     |
+dclk1                              | BUFG                   | 90    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 7.174ns (Maximum Frequency: 139.383MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 4.519ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 1.760ns (frequency: 568.069MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.760ns (Levels of Logic = 0)
+  Source:            dclk (FF)
+  Destination:       dclk (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: dclk to dclk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.514   0.451  dclk (dclk1)
+     FDR:R                     0.795          dclk
+    ----------------------------------------
+    Total                      1.760ns (1.309ns logic, 0.451ns route)
+                                       (74.4% logic, 25.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'dclk1'
+  Clock period: 7.174ns (frequency: 139.383MHz)
+  Total number of paths / destination ports: 4962 / 191
+-------------------------------------------------------------------------
+Delay:               7.174ns (Levels of Logic = 5)
+  Source:            h_pos_6 (FF)
+  Destination:       Bout_1 (FF)
+  Source Clock:      dclk1 rising
+  Destination Clock: dclk1 rising
+
+  Data Path: h_pos_6 to Bout_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               7   0.514   0.754  h_pos_6 (h_pos_6)
+     LUT2:I0->O            1   0.612   0.360  Bout_and0007177 (Bout_and0007177)
+     LUT4:I3->O            1   0.612   0.360  Bout_and0007181 (Bout_and0007181)
+     LUT4:I3->O            1   0.612   0.360  Bout_and0007233 (Bout_and0007233)
+     LUT4:I3->O            3   0.612   0.520  Bout_and0007247 (Bout_and0007)
+     LUT2:I1->O            3   0.612   0.451  Bout_and000711 (Bout_and00071)
+     FDR:R                     0.795          Bout_1
+    ----------------------------------------
+    Total                      7.174ns (4.369ns logic, 2.806ns route)
+                                       (60.9% logic, 39.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.134ns (Levels of Logic = 1)
+  Source:            dclk (FF)
+  Destination:       DAC_CLK (PAD)
+  Source Clock:      clk rising
+
+  Data Path: dclk to DAC_CLK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.514   0.451  dclk (dclk1)
+     OBUF:I->O                 3.169          DAC_CLK_OBUF (DAC_CLK)
+    ----------------------------------------
+    Total                      4.134ns (3.683ns logic, 0.451ns route)
+                                       (89.1% logic, 10.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'dclk1'
+  Total number of paths / destination ports: 24 / 24
+-------------------------------------------------------------------------
+Offset:              4.519ns (Levels of Logic = 1)
+  Source:            Bout_0 (FF)
+  Destination:       Bout<7> (PAD)
+  Source Clock:      dclk1 rising
+
+  Data Path: Bout_0 to Bout<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              13   0.514   0.836  Bout_0 (Bout_0)
+     OBUF:I->O                 3.169          Bout_7_OBUF (Bout<7>)
+    ----------------------------------------
+    Total                      4.519ns (3.683ns logic, 0.836ns route)
+                                       (81.5% logic, 18.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 4.07 secs
+ 
+--> 
+
+
+Total memory usage is 642056 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   23 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

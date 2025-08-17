@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/home/student2/s4jabbar/COE758/Project2/lab2.xst" -ofn "/home/student2/s4jabbar/COE758/Project2/lab2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc project2specs.ucf -p xc3s500e-fg320-5 lab2.ngc lab2.ngd  
